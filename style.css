@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+main{
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(2, 1fr 0.01fr) 1fr;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width:100%;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-zoom {
+    overflow: hidden; 
+}
+
+.background-zoom  img {
+    transition: transform 1s ease;
+}
+
+.background-zoom:hover img {
+    transform: scale(1.1);
+}
+
+.background-zoom:not(:hover){
+    opacity: 0.5;
+}
