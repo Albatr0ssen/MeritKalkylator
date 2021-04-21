@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+header{
+    height: 40px;
+    background: grey;
+}
+
+main{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    background-color: yellow;
+    position: absolute;
+    top: 40px;
+    bottom: 20px;
+    width:100%;
+}
+
+footer{
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    background: grey;
+}
+
+.button{
+    display: flex;
+}
+
+.choice{
+    justify-content: center;
+}
