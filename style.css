@@ -4,14 +4,16 @@
     border: 0;
 }
 
-main{
+.grid{
     display: grid;
+}
+
+.main-menu{
     background-color: black;
     grid-template-columns: repeat(2, 1fr 0.01fr) 1fr;
     position: absolute;
     top: 0px;
     bottom: 0px;
-    width:100%;
 }
 
 .button{
