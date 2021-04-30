@@ -4,36 +4,85 @@
     border: 0;
 }
 
-header{
-    height: 40px;
-    background: grey;
-}
-
-main{
+.grid{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-
-    background-color: yellow;
-    position: absolute;
-    top: 40px;
-    bottom: 20px;
-    width:100%;
 }
 
-footer{
-    position: fixed;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/ 
-    height: 40px;
-    background: grey;
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-grid{
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+}
+
+.class{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 15vh;
+    border: 0.25vh;
+    border-bottom: 0;
+    border-style: solid;
+    border-color: black;
+}
+
+.class-name{
+    font-size: 2rem;
+}
+
+.grade-letter{
+    margin: 1vh;
+    height: 5vh;
+    width: 5vh;
+    font-size: 3vh;
+}
+
+.grade-letter:hover{
+    background-color: lightblue;
+}
+
+.calculator{
+    margin-top: 15vh;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.column2{
+    column-span: 2;
+}
+
+.bgcolorred{
+    background-color: red;
+}
+
+.main-menu{
+    background-color: black;
+    grid-template-columns: repeat(2, 1fr 0.01fr) 1fr;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
 }
 
 .button{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.choice{
-    justify-content: center;
+.background-zoom {
+    overflow: hidden; 
+}
+
+.background-zoom  img {
+    transition: transform 1s ease;
+}
+
+.background-zoom:hover img {
+    transform: scale(1.1);
+}
+
+.background-zoom:not(:hover){
+    opacity: 0.5;
 }
