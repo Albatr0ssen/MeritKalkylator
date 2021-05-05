@@ -15,14 +15,16 @@ function SubMenu(choice){
     main.classList.add("sub-menu");
         main.innerHTML = 
         `
-        <div class="button background-zoom">
-            <a href="javascript:TeknikCalc('Spel')">
-                <img src="img/teknik-background.jpg" alt="Bild av matematik/fysik som representerar Teknik-programet">
+        <div class="button background flex-center">
+            <a class="image-zoom" href="javascript:TeknikCalc('Spel')">
+                <span class="image-text">CIVIL</span>
+                <img src="img/teknik.png" alt="Bild av matematik/fysik som representerar Teknik-programet">
             </a>
         </div>
         <div></div>
-        <div class="button background-zoom">
-            <a href="javascript:TeknikCalc('Civil')">'   
+        <div class="button background flex-center">
+            <a class="image-zoom" href="javascript:TeknikCalc('Civil')">
+                <span class="image-text">SPEL</span>      
                 <img src="img/average-spelelev.png" alt="Bild av servrar som representerar IT-programet">
             </a>
         </div>
