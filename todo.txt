@@ -1,2 +1,0 @@
-skapa json för alla ämnen med namn och poäng
-js kod för att generera ämnen

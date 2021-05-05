@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
     <title>Meritkalkylator</title>
 </head>
 <body>
-    <main class="grid main-menu">
-        <div class="button background-zoom">
-            <a href="calculator.html">
-                <img src="img/it-background.jpg" alt="Image of servers representing the IT program">
-            </a>  a
+    <header class="flex-center mainbg">
+        <h1 class="title mainbg">Merit Kalkylator</h1>
+        <h2 class="subtitle mainbg">NTI Gymnaiset Stockholm</h2>
+    </header>
+    <main class="grid main-menu" id="main">
+        <div class="button background-zoom flex-center">
+            <a href="javascript:SubMenu('IT')">        
+                <img src="img/it-background.jpg" alt="Bild av servrar som representerar IT-programet">
+            </a>
         </div>
         <div></div>
-        <div class="button background-zoom">
-            <img src="img/teknik-background.jpg" alt="Image of math representing the technology program">
+        <div class="button background-zoom flex-center">
+            <a href="javascript:SubMenu('Teknik')">
+                <span class="image-text">TEKNIK</span>
+                <img src="img/teknik-background.jpg" alt="Bild av matematik som representerar Teknik-programet">
+            </a>
         </div>
         <div></div>
-        <div class="button background-zoom">
-            <img src="img/design-background.jpg" alt="Image of abstract art representing the design program">
+        <div class="button background-zoom flex-center">
+            <img src="img/design-background.jpg" alt="Bild av abstrakt konst som representerar Design-programet">
         </div>
     </main>
 </body>

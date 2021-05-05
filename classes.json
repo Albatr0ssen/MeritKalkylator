@@ -1,6 +1,140 @@
-{ "teknik": {
-        "English": {
-            
-        } 
+{ 
+    "Teknik": {
+        "År1":
+        [
+            {
+                "klass": "Svenska 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 5",
+                "poäng": "100"
+            },
+            {
+                "klass": "Teknik 1",
+                "poäng": "150"
+            },
+            {
+                "klass": "Matematik 1c",
+                "poäng": "100"
+            },
+            {
+                "klass": "Matematik 2c",
+                "poäng": "100"
+            },
+            {
+                "klass": "Samhällskunskap 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Religionskunskap 1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Idrott och hälsa 1",
+                "poäng": "100"
+            }
+        ],
+        "År2":
+        [
+            {
+                "klass": "Svenska 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 6",
+                "poäng": "100"
+            },
+            {
+                "klass": "Fysik 1a",
+                "poäng": "150"
+            },
+            {
+                "klass": "Matematik 3c",
+                "poäng": "100"
+            },
+            {
+                "klass": "Dator- och nätverksteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Programmering 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Webbutveckling 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 1",
+                "poäng": "100"
+            }
+        ],
+        "År3Civ":
+        [
+            {
+                "klass": "Svenska 3",
+                "poäng": "100"
+            },
+            {
+                "klass": "Fysik 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Kemi 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Matematik 4",
+                "poäng": "100"
+            },
+            {
+                "klass": "Matematik 5",
+                "poäng": "100"
+            },
+            {
+                "klass": "Programmering 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ],
+        "År3Spel":
+        [
+            {
+                "klass": "Svenska 3",
+                "poäng": "100"
+            },
+            {
+                "klass": "Kemi 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Programmering 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Gränssnittsdesign",
+                "poäng": "100"
+            },
+            {
+                "klass": "Digitalt skapande 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Animation 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ]
     }
 }

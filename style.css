@@ -1,7 +1,18 @@
 *{
+    background-color: var(--bg-color);    
+    color: var(--font-color); 
     margin: 0;
     padding: 0;
     border: 0;
+    font-size: 1vmin;
+}
+
+:root{
+    --bg-color: #e7e6cd;
+    --la-color: #81b3d4;
+    --main-color: #4B738D;
+    --da-color: #773348;
+    --font-color: #471e4b; 
 }
 
 .grid{
@@ -14,26 +25,66 @@
     align-items: center;
 }
 
-.choice-grid{
-    display: grid;
-    grid-template-rows: repeat(15, 1fr);
+header{
+    flex-direction: column;
+    padding-bottom: 2.2vh;
+    width: 100vw;
 }
 
-.class{
+.title{
+    font-size: 7rem;
+    margin-top: 2vh;
+}
+
+.subtitle{
+    margin-top: 0.5vh;
+    font-size: 2.5rem;
+}
+
+.year{
+    margin-top: 3vh;
+    font-size: 3rem;
+}
+
+.mainbg{
+    background-color: var(--main-color);
+}
+
+.dabg{
+    background-color: var(--da-color);
+}
+
+.courses{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-column: 2;
+    grid-template-columns: 1.5fr 3fr;
     height: 15vh;
     border: 0.25vh;
-    border-bottom: 0;
     border-style: solid;
     border-color: black;
 }
 
-.class-name{
-    font-size: 2rem;
+.no-top{
+    border-top: 0;
+}
+
+.course{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.course-name{
+    font-size: 4rem;
+}
+
+.course-points{
+    font-size: 3rem;
 }
 
 .grade-letter{
+    background-color: var(--la-color);
     margin: 1vh;
     height: 5vh;
     width: 5vh;
@@ -41,41 +92,51 @@
 }
 
 .grade-letter:hover{
-    background-color: lightblue;
+    background-color: var(--da-color);
 }
 
 .calculator{
-    margin-top: 15vh;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 .column2{
-    column-span: 2;
+    grid-column: 2;
 }
 
-.bgcolorred{
-    background-color: red;
-}
+/* Main/Sub Menu */
 
 .main-menu{
     background-color: black;
     grid-template-columns: repeat(2, 1fr 0.01fr) 1fr;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 15vmin;
+    bottom: 0;
+}
+
+.sub-menu{
+    background-color: black;
+    grid-template-columns: 1fr 0.01fr 1fr;
+    position: absolute;
+    top: 15vmin;
+    bottom: 0;
 }
 
 .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
+
+.image-text{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 5rem;
 }
 
 .background-zoom {
     overflow: hidden; 
 }
 
-.background-zoom  img {
+.background-zoom img {
     transition: transform 1s ease;
 }
 
