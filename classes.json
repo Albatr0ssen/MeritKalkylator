@@ -74,7 +74,7 @@
                 "poäng": "100"
             }
         ],
-        "År3Civ":
+        "År3Civil":
         [
             {
                 "klass": "Svenska 3",
@@ -130,6 +130,376 @@
             {
                 "klass": "Animation 1",
                 "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ]
+    },
+    "IT": {
+        "År1":
+        [
+            {
+                "klass": "Svenska 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 5",
+                "poäng": "100"
+            },
+            {
+                "klass": "Naturkunskap 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Matematik 1a",
+                "poäng": "100"
+            },
+            {
+                "klass": "Energiteknik 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Elektromekanik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Mekatronik 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Datorteknik 1a",
+                "poäng": "100"
+            },
+            {
+                "klass": "Idrott och hälsa 1",
+                "poäng": "100"
+            }
+        ],
+        "År2BackEnd":
+        [
+            {
+                "klass": "Engelska 6",
+                "poäng": "100"
+            },
+            {
+                "klass": "Elektronik och mikrodatorteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Dator- och nätverksteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Nätverksteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Tillämpad programmering",
+                "poäng": "100"
+            },
+            {
+                "klass": "Programmering 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Webbutveckling 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Religionskunskap 1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Individuellt val 1",
+                "poäng": "100"
+            }
+        ],
+        "År3BackEnd":
+        [
+            {
+                "klass": "Kommunikationsnät 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Webbutveckling 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Webbserverprogrammering 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Webbserverprogrammering 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Gränssnittsdesign",
+                "poäng": "100"
+            },
+            {
+                "klass": "Samhällskunskap 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ],
+        "År2Infra":
+        [
+            {
+                "klass": "Engelska 6",
+                "poäng": "100"
+            },
+            {
+                "klass": "Elektronik och mikrodatorteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Dator- och nätverksteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Nätverksteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Tillämpad programmering",
+                "poäng": "100"
+            },
+            {
+                "klass": "Datorsamordning och support",
+                "poäng": "100"
+            },
+            {
+                "klass": "Nätverksadministration",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Religionskunskap 1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Individuellt val 1",
+                "poäng": "100"
+            }
+        ],
+        "År3Infra":
+        [
+            {
+                "klass": "Kommunikationsnät 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Digital kommunikationsteknik",
+                "poäng": "100"
+            },
+            {
+                "klass": "Nätverkssäkerhet",
+                "poäng": "100"
+            },
+            {
+                "klass": "Nätverksteknologier",
+                "poäng": "100"
+            },
+            {
+                "klass": "Administration av nätverk och serverutrustning",
+                "poäng": "100"
+            },
+            {
+                "klass": "Samhällskunskap 1a1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ]
+    },
+    "Design": {
+        "År1":
+        [
+            {
+                "klass": "Svenska 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 5",
+                "poäng": "100"
+            },
+            {
+                "klass": "Matematik 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Medieproduktion 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Medieproduktion 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Medier, samhälle och kommunikation 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Estetisk kommunikation 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Samhällskunskap 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Idrott och hälsa 1",
+                "poäng": "100"
+            }
+        ],
+        "År2Motion":
+        [
+            {
+                "klass": "Svenska 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 6",
+                "poäng": "100"
+            },
+            {
+                "klass": "Naturkunskap 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Digitalt skapande 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Ljudproduktion 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Animation 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 1",
+                "poäng": "100"
+            }
+        ],
+        "År3Motion":
+        [
+            {
+                "klass": "Svenska 3",
+                "poäng": "100"
+            },
+            {
+                "klass": "Konstarterna och samhället",
+                "poäng": "50"
+            },
+            {
+                "klass": "Digitalt skapande 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Animation 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Animation specialisering",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 2b - kultur",
+                "poäng": "100"
+            },
+            {
+                "klass": "Religionskunskap 1",
+                "poäng": "50"
+            },
+            {
+                "klass": "Individuellt val 2",
+                "poäng": "100"
+            }
+        ],
+        "År2Visual":
+        [
+            {
+                "klass": "Svenska 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Engelska 6",
+                "poäng": "100"
+            },
+            {
+                "klass": "Naturkunskap 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Digitalt skapande 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Grafisk kommunikation 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Fotografisk bild 1",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 1b",
+                "poäng": "100"
+            },
+            {
+                "klass": "Individuellt val 1",
+                "poäng": "100"
+            }
+        ],
+        "År3Visual":
+        [
+            {
+                "klass": "Svenska 3",
+                "poäng": "100"
+            },
+            {
+                "klass": "Konstarterna och samhället",
+                "poäng": "50"
+            },
+            {
+                "klass": "Digitalt skapande 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Grafisk kommunikation 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Fotografisk bild 2",
+                "poäng": "100"
+            },
+            {
+                "klass": "Historia 2b - kultur",
+                "poäng": "100"
+            },
+            {
+                "klass": "Religionskunskap 1",
+                "poäng": "50"
             },
             {
                 "klass": "Individuellt val 2",

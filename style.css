@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Work+Sans:wght@300&display=swap');
 *{
     background-color: var(--bg-color);    
     color: var(--font-color); 
@@ -5,6 +6,7 @@
     padding: 0;
     border: 0;
     font-size: 1vmin;
+    font-family: 'Work Sans', sans-serif;
 }
 
 :root{
@@ -27,16 +29,20 @@
 
 header{
     flex-direction: column;
-    padding-bottom: 2.2vh;
+    padding-bottom: 1.4vh;
     width: 100vw;
 }
 
 .title{
+    font-family: 'Arvo', serif;
+    font-weight: 700;
     font-size: 7rem;
-    margin-top: 2vh;
+    margin-top: 1.3vh;
 }
 
 .subtitle{
+    font-family: 'Arvo', serif;
+    font-weight: 400;
     margin-top: 0.5vh;
     font-size: 2.5rem;
 }
@@ -57,8 +63,8 @@ header{
 .courses{
     display: grid;
     grid-column: 2;
-    grid-template-columns: 1.5fr 3fr;
-    height: 15vh;
+    grid-template-columns: 1fr 1fr;
+    min-height: 15vh;
     border: 0.25vh;
     border-style: solid;
     border-color: black;
@@ -150,8 +156,26 @@ header{
 
 .image-text{
     position: absolute;
+    text-align: center;
+    background-color: orange;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 10rem;
+    transform: translate(-50%, -165%);
+    font-size: 8rem;
+    padding: 1.5vmin;
+    border-radius: 1vh;
+    min-height: 1vmin;
+    max-height: 18vmin;
+}
+
+.rows2{
+    transform: translate(-50%, -115%);
+}
+
+.bruh{
+    min-height: 18vmin
+}
+
+.backend{
+    white-space: nowrap;
 }
