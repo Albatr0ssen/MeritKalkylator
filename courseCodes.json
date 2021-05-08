@@ -1,0 +1,256 @@
+{
+    "kurs": [
+        {
+            "klass": "Svenska 1",
+            "kod": "SVESVE01"
+        },
+        {
+            "klass": "Svenska 2",
+            "kod": "SVESVE02"
+        },
+        {
+            "klass": "Svenska 3",
+            "kod": "SVESVE03"
+        },
+        {
+            "klass": "Engelska 5",
+            "kod": "ENGENG05"
+        },
+        {
+            "klass": "Engelska 6",
+            "kod": "ENGENG06"
+        },  
+        {
+            "klass": "Matematik 1a",
+            "kod": "MATMAT01a"
+        },
+        {
+            "klass": "Matematik 1b",
+            "kod": "MATMAT01b"
+        },
+        {
+            "klass": "Matematik 1c",
+            "kod": "MATMAT01c"
+        },
+        {
+            "klass": "Matematik 2c",
+            "kod": "MATMAT02c"
+        },
+        {
+            "klass": "Matematik 3c",
+            "kod": "MATMAT03c"
+        },
+        {
+            "klass": "Matematik 4",
+            "kod": "MATMAT04"
+        },
+        {
+            "klass": "Matematik 5",
+            "kod": "MATMAT05"
+        },
+        {
+            "klass": "Naturkunskap 1a1",
+            "kod": "NAKNAK01a1"
+        },
+        {
+            "klass": "Naturkunskap 1b",
+            "kod": "NAKNAK01b"
+        },
+        {
+            "klass": "Fysik 1a",
+            "kod": "FYSFYS01a"
+        },
+        {
+            "klass": "Fysik 2",
+            "kod": "FYSFYS02"
+        },
+        {
+            "klass": "Kemi 1",
+            "kod": "KEMKEM01"
+        },
+        {
+            "klass": "Teknik 1",
+            "kod": "TEKTEK01"
+        },
+        {
+            "klass": "Historia 1a1",
+            "kod": "HISHIS01a1"
+        },
+        {
+            "klass": "Historia 1b",
+            "kod": "HISHIS01b"
+        },
+        {
+            "klass": "Historia 2b - kultur",
+            "kod": "HISHIS02b"
+        },
+        {
+            "klass": "Religionskunskap 1",
+            "kod": "RELREL01"
+        },
+        {
+            "klass": "Samhällskunskap 1a1",
+            "kod": "SAMSAM01a"
+        },
+        {
+            "klass": "Samhällskunskap 1b",
+            "kod": "SAMSAM01b"
+        },
+        {
+            "klass": "Idrott och hälsa 1",
+            "kod": "IDRIDR01"
+        },
+        {
+            "klass": "Programmering 1",
+            "kod": "PRRPRR01"
+        },
+        {
+            "klass": "Programmering 2",
+            "kod": "PRRPRR02"
+        },
+        {
+            "klass": "Tillämpad programmering",
+            "kod": "TIATIL00S"
+        },
+        {
+            "klass": "Webbutveckling 1",
+            "kod": "WEUWEB01"
+        },
+        {
+            "klass": "Webbutveckling 2",
+            "kod": "WEUWEB02"
+        },
+        {
+            "klass": "Webbserverprogrammering 1",
+            "kod": "WESWEB01"
+        },
+        {
+            "klass": "Webbserverprogrammering 2",
+            "kod": "WESWEB02"
+        },
+        {
+            "klass": "Dator- och nätverksteknik",
+            "kod": "DAODAC0"
+        },
+        {
+            "klass": "Animation 1",
+            "kod": "ANIANI01"
+        },
+        {
+            "klass": "Animation 2",
+            "kod": "ANIANI02"
+        },
+        {
+            "klass": "Animation specialisering",
+            "kod": "ANIANI00S"
+        },
+        {
+            "klass": "Digital kommunikationsteknik",
+            "kod": "DAODIG0"
+        },
+        {
+            "klass": "Datorteknik 1a",
+            "kod": "DAODAT01a"
+        },
+        {
+            "klass": "Datorsamordning och support",
+            "kod": "DAODAT0"
+        },
+        {
+            "klass": "Digitalt skapande 1",
+            "kod": "DIGDIG01"
+        },
+        {
+            "klass": "Digitalt skapande 2",
+            "kod": "DIGDIG02"
+        },
+        {
+            "klass": "Elektronik och mikrodatorteknik",
+            "kod": "ELEELR0"
+        },
+        {
+            "klass": "Elektromekanik",
+            "kod": "ELRELK0"
+        },
+        {
+            "klass": "Energiteknik 1",
+            "kod": "ENEENE01"
+        },
+        {
+            "klass": "Estetisk kommunikation 1",
+            "kod": "ESTEST01"
+        },
+        {
+            "klass": "Fotografisk bild 1",
+            "kod": "FOTFOT01"
+        },
+        {
+            "klass": "Fotografisk bild 2",
+            "kod": "FOTFOT02"
+        },
+        {
+            "klass": "Grafisk kommunikation 1",
+            "kod": "GRAGRA01"
+        },
+        {
+            "klass": "Grafisk kommunikation 2",
+            "kod": "GRAGRA02"
+        },
+        {
+            "klass": "Gränssnittsdesign",
+            "kod": "GRÄGRÄ0"
+        },
+        {
+            "klass": "Kommunikationsnät 1",
+            "kod": "INSKOM01"
+        },
+        {
+            "klass": "Konstarterna och samhället",
+            "kod": "KOSKOS0"
+        },
+        {
+            "klass": "Ljudproduktion 1",
+            "kod": "LJULJU01"
+        },
+        {
+            "klass": "Mekatronik 1",
+            "kod": "MEKMEK01"
+        },
+        {
+            "klass": "Medieproduktion 1",
+            "kod": "MEPMEI01"
+        },
+        {
+            "klass": "Medieproduktion 2",
+            "kod": "MEPMEI02"
+        },
+        {
+            "klass": "Medier, samhälle och kommunikation 1",
+            "kod": "MERMEE01"
+        },
+        {
+            "klass": "Nätverksteknik",
+            "kod": "NAINAR0"
+        },
+        {
+            "klass": "Nätverksteknologier",
+            "kod": "NAINAK0"
+        },
+        {
+            "klass": "Nätverksadministration",
+            "kod": "NAINAV0"
+        },
+        {
+            "klass": "Nätverkssäkerhet",
+            "kod": "NAINAE0"
+        },
+        {
+            "klass": "Individuellt val 1",
+            "kod": "INDIVID01"
+        },
+        {
+            "klass": "Individuellt val 2",
+            "kod": "INDIVID02"
+        }
+    ]
+}
