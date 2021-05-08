@@ -1,4 +1,5 @@
-let courseList, courseAmount = 0, allIDs = [];
+let courseList, courseAmount = 0;
+let allIDs = [];
 let main = document.getElementById("main");
 
 async function KursKod(subject){
@@ -34,7 +35,7 @@ function CalcStartup(){
     courseList = document.getElementById("class-list");
 }
 
-async function CalcGenerator(program, focus){   
+async function CalcGenerator(program, focus){
     CalcStartup();
     let data = await ProgramData(program);
     courseList.innerHTML += '<h3 class="year">År 1</h3>';
@@ -75,11 +76,26 @@ async function CalcGenerator(program, focus){
         }
     }
     for(let x = 0; x< allIDs.length; x++){
-        document.getElementById(allIDs[x]).addEventListener("click", ()=>{
-            console.log(allIDs[x]);
-            document.getElementById(allIDs[x]).classList.remove("not-selected");
-            document.getElementById(allIDs[x]).classList.add("selected");
-        })
+        for(let y = 0; y < 6; y++){
+            let id = allIDs[x][1][y];
+            document.getElementById(id).addEventListener("click", ()=>{
+                if(allIDs[x][2] == null){
+                    allIDs[x][2] = id;
+                }
+                else{
+                    for(let z = 0; z < allIDs[x][1].length;z++){                        
+                        if(allIDs[x][2] == allIDs[x][1][z]){
+                            document.getElementById(allIDs[x][1][z]).classList.remove("selected");
+                            document.getElementById(allIDs[x][1][z]).classList.add("not-selected");
+                            allIDs[x][2] = id;
+                        }
+                    }         
+                }
+                console.log(id);
+                document.getElementById(id).classList.remove("not-selected");
+                document.getElementById(id).classList.add("selected");
+            });
+        }
     }   
 }
 
@@ -98,7 +114,6 @@ async function GenerateSubjects(data, dataSet){
 }
 
 async function CreateSubject(subject, points, first){
-    courseAmount += 1;
     if(first == true){
         classDiv = '<div class="courses mainbg">';
     }
@@ -115,13 +130,16 @@ async function CreateSubject(subject, points, first){
     `   
     let betygLista = ["A","B","C","D","E","F"];
     kursKod = await KursKod(subject);
+    allIDs.push(["",[], null]);
+    allIDs[courseAmount][0] = kursKod;
     for(let x = 0; x < 6 ; x++){
         let currentId = kursKod + betygLista[x];
-        allIDs.push(currentId);
+        allIDs[courseAmount][1].push(currentId);
         classDiv += '<button type="button" id="' + currentId + '" class="grade-letter not-selected">' + betygLista[x] + '</button>';
     }
     classDiv += '</div></div>';
     courseList.innerHTML += classDiv;
+    courseAmount += 1;
 }
 
 function SubMenu(choice){
