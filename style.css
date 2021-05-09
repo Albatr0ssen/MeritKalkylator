@@ -7,6 +7,7 @@
     border: 0;
     font-size: 1vmin;
     font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 :root{
@@ -70,6 +71,14 @@ header{
     border-color: black;
 }
 
+.calculate-button{
+    border-radius: 1vmin;
+    font-size: 5rem;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+    padding: 1vmin;
+}
+
 .no-top{
     border-top: 0;
 }
@@ -97,7 +106,16 @@ header{
     background-color: var(--da-color);
 }
 
+.select-now{
+    background-color: rgba(255,0,0,.7);
+}
+
+.din-merit{
+    font-size: 10rem;
+}
+
 .grade-letter{
+    border-radius: 1vmin;
     margin: 1vh;
     height: 5vh;
     width: 5vh;
@@ -114,6 +132,10 @@ header{
 
 .column2{
     grid-column: 2;
+}
+
+#merit-result{
+    height: 20vmin;
 }
 
 /* Main/Sub Menu */

@@ -1,17 +1,20 @@
-let courseList, courseAmount = 0;
+let courseList, courseAmount = 0, eventGenerated = false;
 let allIDs = [];
 let main = document.getElementById("main");
 
 async function KursKod(subject){
     const response = await fetch('./courseCodes.json');
     const data = await response.json();
-    let kursKod;
-    for(x in data.kurs){
-        if(data.kurs[x].klass == subject){
-            kursKod = data.kurs[x].kod;
-        } 
+    if(subject != undefined){
+        let kursKod;
+        for(x in data.kurs){
+            if(data.kurs[x].klass == subject){
+                kursKod = data.kurs[x].kod;
+            } 
+        }
+        return kursKod;
     }
-    return kursKod;
+    return data.kurs;
 }
 
 async function ProgramData(program) {
@@ -28,16 +31,15 @@ async function ProgramData(program) {
     }
 }
 
-function CalcStartup(){
+async function CalcGenerator(program, focus){
+    //Förbreder inför generationen av kurser
     main.classList.remove("sub-menu");
     main.classList.add("calculator");
     main.innerHTML = '<div class="column2" id="class-list"></div>';
     courseList = document.getElementById("class-list");
-}
-
-async function CalcGenerator(program, focus){
-    CalcStartup();
     let data = await ProgramData(program);
+    let kursKoder = await KursKod();
+    // Genererar alla klasser till program och inriktning
     courseList.innerHTML += '<h3 class="year">År 1</h3>';
     await GenerateSubjects(data, "År1");
     courseList.innerHTML += '<h3 class="year">År 2</h3>';
@@ -75,6 +77,92 @@ async function CalcGenerator(program, focus){
             await GenerateSubjects(data, "År3Visual");
         }
     }
+    
+    //Genererar meritvalet
+    let classDiv = '';
+    classDiv +=
+    `
+    <h3 class="year"></h3>
+    <div  class="courses mainbg">
+        <div class="course mainbg">
+            <span class="course-name mainbg">Meritpoäng</span>
+        </div>
+        <div id="MERIT" class="flex-center mainbg">
+        
+    `
+    let meritLista = [0,0.5,1,1.5,2,2.5];
+    allIDs.push(["",[], null]);
+    allIDs[courseAmount][0] = 'MERIT';
+    for(let x = 0; x < 6 ; x++){
+        let currentId = allIDs[courseAmount][0] + meritLista[x];
+        allIDs[courseAmount][1].push(currentId);
+        classDiv += '<button type="button" id="' + currentId + '" class="grade-letter not-selected">' + meritLista[x] + '</button>';
+    }
+    courseAmount += 1;
+    classDiv += '</div></div>'
+
+    //Genererar 'räkna' knappen
+    classDiv += 
+    `
+    <div class="flex-center">
+        <a href="#merit-result"id="CALCULATE" class=" calculate-button not-selected">
+            RÄKNA UT
+        </a>
+    </div>
+    <div id="merit-result" class="flex-center">
+    </div>
+    `
+    courseList.innerHTML += classDiv;  
+    document.getElementById('CALCULATE').addEventListener("click", ()=>{ 
+        console.log(allIDs[allIDs.length-1])
+        let meritVärde = 0, notPicked = [];
+        allIDs.forEach(course => {
+            if(course[2] == null){
+                notPicked.push(course[0]);
+                document.getElementById("merit-result").innerHTML = '<span class="din-merit">Allt är inte ifyllt!</span>'
+            }
+        })
+        if(notPicked.length == 0){
+            //Räknar ut merit
+            let betygPoäng = [20,17.5,15,12.5,10,0];
+            let meritPoäng = [0,0.5,1,1.5,2,2.5];
+            let kursPoäng = 0;
+            for(let i = 0; i < allIDs.length;i++){
+                for(let j = 0; j < 6; j++){
+                    if(allIDs[i][2] == allIDs[i][1][j]){
+                        for(let k = 0; k < kursKoder.length; k++){
+                            if(kursKoder[k].kod == allIDs[i][0]){
+                                kursPoäng += betygPoäng[j]*kursKoder[k].poäng;
+                                console.log(i, j, k, kursPoäng)
+                            }
+                        }           
+                    }
+                }
+            }
+            meritVärde = kursPoäng/2400;
+            for(let i = 0; i < 6; i++){
+                if(allIDs[allIDs.length-1][2] == allIDs[allIDs.length-1][1][i]){
+                    meritVärde += meritPoäng[i];
+                }
+            }
+            document.getElementById("merit-result").innerHTML = 
+            `
+            <span class="din-merit">DIN MERIT ÄR: ` + meritVärde.toFixed(1) + `</span>
+            `
+            GenerateEventListeners();
+        }
+        else{
+            notPicked.forEach(id => {
+                document.getElementById(id).classList.add("select-now");
+            })
+        }
+    });
+    GenerateEventListeners();
+}
+
+function GenerateEventListeners(){
+    
+    //Skapar en eventlistener för varje val och väljer/avväljer när betyg/merit trycks
     for(let x = 0; x< allIDs.length; x++){
         for(let y = 0; y < 6; y++){
             let id = allIDs[x][1][y];
@@ -91,12 +179,13 @@ async function CalcGenerator(program, focus){
                         }
                     }         
                 }
-                console.log(id);
+                document.getElementById(allIDs[x][0]).classList.remove("select-now")
                 document.getElementById(id).classList.remove("not-selected");
                 document.getElementById(id).classList.add("selected");
             });
         }
-    }   
+    } 
+    eventGenerated = true;
 }
 
 async function GenerateSubjects(data, dataSet){
@@ -114,6 +203,8 @@ async function GenerateSubjects(data, dataSet){
 }
 
 async function CreateSubject(subject, points, first){
+    let betygLista = ["A","B","C","D","E","F"];
+    kursKod = await KursKod(subject);
     if(first == true){
         classDiv = '<div class="courses mainbg">';
     }
@@ -126,10 +217,8 @@ async function CreateSubject(subject, points, first){
             <span class="course-name mainbg">` + subject + `</span>
             <span class="course-points mainbg">` + points + ` Poäng</span>
         </div>
-        <div class="flex-center mainbg" > 
+        <div id="` + kursKod + `" class="flex-center mainbg"> 
     `   
-    let betygLista = ["A","B","C","D","E","F"];
-    kursKod = await KursKod(subject);
     allIDs.push(["",[], null]);
     allIDs[courseAmount][0] = kursKod;
     for(let x = 0; x < 6 ; x++){

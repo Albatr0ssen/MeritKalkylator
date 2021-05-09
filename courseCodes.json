@@ -2,255 +2,318 @@
     "kurs": [
         {
             "klass": "Svenska 1",
-            "kod": "SVESVE01"
+            "kod": "SVESVE01",
+            "poäng": "100"
         },
         {
             "klass": "Svenska 2",
-            "kod": "SVESVE02"
+            "kod": "SVESVE02",
+            "poäng": "100"
         },
         {
             "klass": "Svenska 3",
-            "kod": "SVESVE03"
+            "kod": "SVESVE03",
+            "poäng": "100"
         },
         {
             "klass": "Engelska 5",
-            "kod": "ENGENG05"
+            "kod": "ENGENG05",
+            "poäng": "100"
         },
         {
             "klass": "Engelska 6",
-            "kod": "ENGENG06"
+            "kod": "ENGENG06",
+            "poäng": "100"
         },  
         {
             "klass": "Matematik 1a",
-            "kod": "MATMAT01a"
+            "kod": "MATMAT01a",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 1b",
-            "kod": "MATMAT01b"
+            "kod": "MATMAT01b",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 1c",
-            "kod": "MATMAT01c"
+            "kod": "MATMAT01c",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 2c",
-            "kod": "MATMAT02c"
+            "kod": "MATMAT02c",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 3c",
-            "kod": "MATMAT03c"
+            "kod": "MATMAT03c",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 4",
-            "kod": "MATMAT04"
+            "kod": "MATMAT04",
+            "poäng": "100"
         },
         {
             "klass": "Matematik 5",
-            "kod": "MATMAT05"
+            "kod": "MATMAT05",
+            "poäng": "100"
         },
         {
             "klass": "Naturkunskap 1a1",
-            "kod": "NAKNAK01a1"
+            "kod": "NAKNAK01a1",
+            "poäng": "50"
         },
         {
             "klass": "Naturkunskap 1b",
-            "kod": "NAKNAK01b"
+            "kod": "NAKNAK01b",
+            "poäng": "100"
         },
         {
             "klass": "Fysik 1a",
-            "kod": "FYSFYS01a"
+            "kod": "FYSFYS01a",
+            "poäng": "150"
         },
         {
             "klass": "Fysik 2",
-            "kod": "FYSFYS02"
+            "kod": "FYSFYS02",
+            "poäng": "100"
         },
         {
             "klass": "Kemi 1",
-            "kod": "KEMKEM01"
+            "kod": "KEMKEM01",
+            "poäng": "100"
         },
         {
             "klass": "Teknik 1",
-            "kod": "TEKTEK01"
+            "kod": "TEKTEK01",
+            "poäng": "150"
         },
         {
             "klass": "Historia 1a1",
-            "kod": "HISHIS01a1"
+            "kod": "HISHIS01a1",
+            "poäng": "50"
         },
         {
             "klass": "Historia 1b",
-            "kod": "HISHIS01b"
+            "kod": "HISHIS01b",
+            "poäng": "100"
         },
         {
             "klass": "Historia 2b - kultur",
-            "kod": "HISHIS02b"
+            "kod": "HISHIS02b",
+            "poäng": "100"
         },
         {
             "klass": "Religionskunskap 1",
-            "kod": "RELREL01"
+            "kod": "RELREL01",
+            "poäng": "50"
         },
         {
             "klass": "Samhällskunskap 1a1",
-            "kod": "SAMSAM01a"
+            "kod": "SAMSAM01a",
+            "poäng": "50"
         },
         {
             "klass": "Samhällskunskap 1b",
-            "kod": "SAMSAM01b"
+            "kod": "SAMSAM01b",
+            "poäng": "100"
         },
         {
             "klass": "Idrott och hälsa 1",
-            "kod": "IDRIDR01"
+            "kod": "IDRIDR01",
+            "poäng": "100"
         },
         {
             "klass": "Programmering 1",
-            "kod": "PRRPRR01"
+            "kod": "PRRPRR01",
+            "poäng": "100"
         },
         {
             "klass": "Programmering 2",
-            "kod": "PRRPRR02"
+            "kod": "PRRPRR02",
+            "poäng": "100"
         },
         {
             "klass": "Tillämpad programmering",
-            "kod": "TIATIL00S"
+            "kod": "TIATIL00S",
+            "poäng": "100"
         },
         {
             "klass": "Webbutveckling 1",
-            "kod": "WEUWEB01"
+            "kod": "WEUWEB01",
+            "poäng": "100"
         },
         {
             "klass": "Webbutveckling 2",
-            "kod": "WEUWEB02"
+            "kod": "WEUWEB02",
+            "poäng": "100"
         },
         {
             "klass": "Webbserverprogrammering 1",
-            "kod": "WESWEB01"
+            "kod": "WESWEB01",
+            "poäng": "100"
         },
         {
             "klass": "Webbserverprogrammering 2",
-            "kod": "WESWEB02"
+            "kod": "WESWEB02",
+            "poäng": "100"
         },
         {
             "klass": "Dator- och nätverksteknik",
-            "kod": "DAODAC0"
+            "kod": "DAODAC0",
+            "poäng": "100"
         },
         {
             "klass": "Animation 1",
-            "kod": "ANIANI01"
+            "kod": "ANIANI01",
+            "poäng": "100"
         },
         {
             "klass": "Animation 2",
-            "kod": "ANIANI02"
+            "kod": "ANIANI02",
+            "poäng": "100"
         },
         {
             "klass": "Animation specialisering",
-            "kod": "ANIANI00S"
+            "kod": "ANIANI00S",
+            "poäng": "100"
         },
         {
             "klass": "Digital kommunikationsteknik",
-            "kod": "DAODIG0"
+            "kod": "DAODIG0",
+            "poäng": "100"
         },
         {
             "klass": "Datorteknik 1a",
-            "kod": "DAODAT01a"
+            "kod": "DAODAT01a",
+            "poäng": "100"
         },
         {
             "klass": "Datorsamordning och support",
-            "kod": "DAODAT0"
+            "kod": "DAODAT0",
+            "poäng": "100"
         },
         {
             "klass": "Digitalt skapande 1",
-            "kod": "DIGDIG01"
+            "kod": "DIGDIG01",
+            "poäng": "100"
         },
         {
             "klass": "Digitalt skapande 2",
-            "kod": "DIGDIG02"
+            "kod": "DIGDIG02",
+            "poäng": "100"
         },
         {
             "klass": "Elektronik och mikrodatorteknik",
-            "kod": "ELEELR0"
+            "kod": "ELEELR0",
+            "poäng": "100"
         },
         {
             "klass": "Elektromekanik",
-            "kod": "ELRELK0"
+            "kod": "ELRELK0",
+            "poäng": "100"
         },
         {
             "klass": "Energiteknik 1",
-            "kod": "ENEENE01"
+            "kod": "ENEENE01",
+            "poäng": "100"
         },
         {
             "klass": "Estetisk kommunikation 1",
-            "kod": "ESTEST01"
+            "kod": "ESTEST01",
+            "poäng": "100"
         },
         {
             "klass": "Fotografisk bild 1",
-            "kod": "FOTFOT01"
+            "kod": "FOTFOT01",
+            "poäng": "100"
         },
         {
             "klass": "Fotografisk bild 2",
-            "kod": "FOTFOT02"
+            "kod": "FOTFOT02",
+            "poäng": "100"
         },
         {
             "klass": "Grafisk kommunikation 1",
-            "kod": "GRAGRA01"
+            "kod": "GRAGRA01",
+            "poäng": "100"
         },
         {
             "klass": "Grafisk kommunikation 2",
-            "kod": "GRAGRA02"
+            "kod": "GRAGRA02",
+            "poäng": "100"
         },
         {
             "klass": "Gränssnittsdesign",
-            "kod": "GRÄGRÄ0"
+            "kod": "GRÄGRÄ0",
+            "poäng": "100"
         },
         {
             "klass": "Kommunikationsnät 1",
-            "kod": "INSKOM01"
+            "kod": "INSKOM01",
+            "poäng": "100"
         },
         {
             "klass": "Konstarterna och samhället",
-            "kod": "KOSKOS0"
+            "kod": "KOSKOS0",
+            "poäng": "50"
         },
         {
             "klass": "Ljudproduktion 1",
-            "kod": "LJULJU01"
+            "kod": "LJULJU01",
+            "poäng": "100"
         },
         {
             "klass": "Mekatronik 1",
-            "kod": "MEKMEK01"
+            "kod": "MEKMEK01",
+            "poäng": "100"
         },
         {
             "klass": "Medieproduktion 1",
-            "kod": "MEPMEI01"
+            "kod": "MEPMEI01",
+            "poäng": "100"
         },
         {
             "klass": "Medieproduktion 2",
-            "kod": "MEPMEI02"
+            "kod": "MEPMEI02",
+            "poäng": "100"
         },
         {
             "klass": "Medier, samhälle och kommunikation 1",
-            "kod": "MERMEE01"
+            "kod": "MERMEE01",
+            "poäng": "100"
         },
         {
             "klass": "Nätverksteknik",
-            "kod": "NAINAR0"
+            "kod": "NAINAR0",
+            "poäng": "100"
         },
         {
             "klass": "Nätverksteknologier",
-            "kod": "NAINAK0"
+            "kod": "NAINAK0",
+            "poäng": "100"
         },
         {
             "klass": "Nätverksadministration",
-            "kod": "NAINAV0"
+            "kod": "NAINAV0",
+            "poäng": "100"
         },
         {
             "klass": "Nätverkssäkerhet",
-            "kod": "NAINAE0"
+            "kod": "NAINAE0",
+            "poäng": "100"
         },
         {
             "klass": "Individuellt val 1",
-            "kod": "INDIVID01"
+            "kod": "INDIVID01",
+            "poäng": "100"
         },
         {
             "klass": "Individuellt val 2",
-            "kod": "INDIVID02"
+            "kod": "INDIVID02",
+            "poäng": "100"
         }
     ]
 }
