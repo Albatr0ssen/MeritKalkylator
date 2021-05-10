@@ -1,3 +1,4 @@
+"use strict";
 let courseList, courseAmount = 0, eventGenerated = false;
 let allIDs = [];
 let main = document.getElementById("main");
@@ -5,9 +6,10 @@ let main = document.getElementById("main");
 async function KursKod(subject){
     const response = await fetch('./courseCodes.json');
     const data = await response.json();
+    let kursKod;
     if(subject != undefined){
-        let kursKod;
-        for(x in data.kurs){
+        
+        for(let x in data.kurs){
             if(data.kurs[x].klass == subject){
                 kursKod = data.kurs[x].kod;
             } 
@@ -35,6 +37,7 @@ async function CalcGenerator(program, focus){
     //Förbreder inför generationen av kurser
     main.classList.remove("sub-menu");
     main.classList.add("calculator");
+    document.getElementsByTagName("body")[0].classList.add("test");
     main.innerHTML = '<div class="column2" id="class-list"></div>';
     courseList = document.getElementById("class-list");
     let data = await ProgramData(program);
@@ -114,7 +117,6 @@ async function CalcGenerator(program, focus){
     `
     courseList.innerHTML += classDiv;  
     document.getElementById('CALCULATE').addEventListener("click", ()=>{ 
-        console.log(allIDs[allIDs.length-1])
         let meritVärde = 0, notPicked = [];
         allIDs.forEach(course => {
             if(course[2] == null){
@@ -133,7 +135,6 @@ async function CalcGenerator(program, focus){
                         for(let k = 0; k < kursKoder.length; k++){
                             if(kursKoder[k].kod == allIDs[i][0]){
                                 kursPoäng += betygPoäng[j]*kursKoder[k].poäng;
-                                console.log(i, j, k, kursPoäng)
                             }
                         }           
                     }
@@ -204,7 +205,8 @@ async function GenerateSubjects(data, dataSet){
 
 async function CreateSubject(subject, points, first){
     let betygLista = ["A","B","C","D","E","F"];
-    kursKod = await KursKod(subject);
+    let kursKod = await KursKod(subject);
+    let classDiv;
     if(first == true){
         classDiv = '<div class="courses mainbg">';
     }
@@ -247,7 +249,7 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Teknik','Spel')">
                 <span class="image-text rows2">SOFTWARE DEVELOPMENT</span>      
-                <img src="" alt="Bild av * som representerar Software Development inriktningen">
+                <img src="img/Software.png" alt="Bild av tv-spelet fortnite som representerar Software Development inriktningen">
             </a>
         </div>
         `;
@@ -258,14 +260,14 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('IT','BackEnd')">
                 <span class="image-text backend">BACK END</span>      
-                <img src="" alt="Bild av servrar som representerar IT-programet">
+                <img src="img/BackEnd.png" alt="Bild av node-js logga som representerar Back-End-inriktningen">
             </a>
         </div>
         <div></div>
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('IT','Infra')">
                 <span class="image-text">INFRASTRUCTURE</span>
-                <img src="img/teknik.png" alt="Bild av * som representerar Teknik-programet">
+                <img src="img/Infrastructure.png" alt="Bild av LAN som representerar Infrastructure-inriktningen">
             </a>
         </div>
         `;
@@ -276,16 +278,25 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Design','Motion')">
                 <span class="image-text rows2">MOTION <br> GRAPHICS</span>
-                <img src="img/teknik.png" alt="Bild av matematik/fysik som representerar Teknik-programet">
+                <img src="img/Motion.png" alt="Bild av en 2d-person som representerar Motion Graphics-inriktningen">
             </a>
         </div>
         <div></div>
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Design','Visual')">
                 <span class="image-text rows2">VISUAL <br> COMMUNICATIONS</span>      
-                <img src="" alt="Bild av servrar som representerar IT-programet">
+                <img src="img/Visual.png" alt="Bild av en fotograf som representerar Visual Communcations-inrktningen">
             </a>
         </div>
         `;
     }
+}
+
+async function GotoMainMenu(){
+    if(allIDs.length > 0){
+        if(await confirm("Är du säker? Din nuvarande val kommer gå förlorade.")){
+            window.location.href = "index.html";
+        }
+    }
+    window.location.href = "index.html";
 }

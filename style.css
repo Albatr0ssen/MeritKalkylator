@@ -7,7 +7,6 @@
     border: 0;
     font-size: 1vmin;
     font-family: 'Work Sans', sans-serif;
-    overflow-x: hidden;
 }
 
 :root{
@@ -136,6 +135,10 @@ header{
 
 #merit-result{
     height: 20vmin;
+}
+
+.test{
+    overflow-x: hidden;
 }
 
 /* Main/Sub Menu */
