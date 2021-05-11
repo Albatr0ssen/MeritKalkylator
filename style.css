@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Work+Sans:wght@300&display=swap');
 *{
     background-color: var(--bg-color);    
-    color: var(--font-color); 
+    color: var(--light-font-color); 
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,6 +15,7 @@
     --main-color: #4B738D;
     --da-color: #773348;
     --font-color: #471e4b; 
+    --light-font-color: #d1e231;
 }
 
 .grid{
@@ -50,6 +51,7 @@ header{
 .year{
     margin-top: 3vh;
     font-size: 3rem;
+    color: var(--font-color);
 }
 
 .mainbg{
@@ -76,6 +78,7 @@ header{
     margin-top: 3vmin;
     margin-bottom: 3vmin;
     padding: 1vmin;
+    color: var(--font-color);
 }
 
 .no-top{
@@ -102,6 +105,7 @@ header{
 }
 
 .selected{
+    color: var(--light-font-color);
     background-color: var(--da-color);
 }
 
@@ -110,6 +114,7 @@ header{
 }
 
 .din-merit{
+    color: var(--font-color);
     font-size: 10rem;
 }
 
@@ -119,10 +124,12 @@ header{
     height: 5vh;
     width: 5vh;
     font-size: 3vh;
+    color: var(--font-color);
 }
 
-.grade-letter:hover{
+.grade-letter:hover, .calculate-button:hover{
     background-color: var(--da-color);
+    color: var(--light-font-color);
 }
 
 .calculator{
@@ -168,6 +175,7 @@ header{
     top: 50%;
     left: 40%;
     font-size: 5rem;
+    color: var(--font-color);
 }
 
 .background {

@@ -242,14 +242,14 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Teknik','Civil')">
                 <span class="image-text">ENGINEERING</span>
-                <img src="img/teknik.png" alt="Bild av matematik/fysik som representerar Engineering inriktningen">
+                <img src="img/Civil.jpg" alt="Bild av matematik/fysik som representerar Engineering inriktningen">
             </a>
         </div>
         <div></div>
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Teknik','Spel')">
                 <span class="image-text rows2">SOFTWARE DEVELOPMENT</span>      
-                <img src="img/Software.png" alt="Bild av tv-spelet fortnite som representerar Software Development inriktningen">
+                <img src="img/Software.jpg" alt="Bild av tv-spelet Fortnite som representerar Software Development inriktningen">
             </a>
         </div>
         `;
@@ -260,14 +260,14 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('IT','BackEnd')">
                 <span class="image-text backend">BACK END</span>      
-                <img src="img/BackEnd.png" alt="Bild av node-js logga som representerar Back-End-inriktningen">
+                <img src="img/BackEnd.jpg" alt="Bild av node.js loggan som representerar Back-End-inriktningen">
             </a>
         </div>
         <div></div>
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('IT','Infra')">
                 <span class="image-text">INFRASTRUCTURE</span>
-                <img src="img/Infrastructure.png" alt="Bild av LAN som representerar Infrastructure-inriktningen">
+                <img src="img/Infrastructure.jpg" alt="Bild av ett LAN som representerar Infrastructure-inriktningen">
             </a>
         </div>
         `;
@@ -278,14 +278,14 @@ function SubMenu(choice){
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Design','Motion')">
                 <span class="image-text rows2">MOTION <br> GRAPHICS</span>
-                <img src="img/Motion.png" alt="Bild av en 2d-person som representerar Motion Graphics-inriktningen">
+                <img src="img/Motion.jpg" alt="Bild av en 2d-person som representerar Motion Graphics-inriktningen">
             </a>
         </div>
         <div></div>
         <div class="button background flex-center">
             <a class="image-zoom" href="javascript:CalcGenerator('Design','Visual')">
                 <span class="image-text rows2">VISUAL <br> COMMUNICATIONS</span>      
-                <img src="img/Visual.png" alt="Bild av en fotograf som representerar Visual Communcations-inrktningen">
+                <img src="img/Visual.jpg" alt="Bild av en fotograf som representerar Visual Communcations-inrktningen">
             </a>
         </div>
         `;
