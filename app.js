@@ -37,13 +37,12 @@ async function CalcGenerator(program, focus){
     //Förbreder inför generationen av kurser
     main.classList.remove("sub-menu");
     main.classList.add("calculator");
-    document.getElementsByTagName("body")[0].classList.add("test");
     main.innerHTML = '<div class="column2" id="class-list"></div>';
     courseList = document.getElementById("class-list");
     let data = await ProgramData(program);
     let kursKoder = await KursKod();
     // Genererar alla klasser till program och inriktning
-    courseList.innerHTML += '<h3 class="year">År 1</h3>';
+    courseList.innerHTML += '<h3 class="year y1">År 1</h3>';
     await GenerateSubjects(data, "År1");
     courseList.innerHTML += '<h3 class="year">År 2</h3>';
     if(program == "Teknik"){
