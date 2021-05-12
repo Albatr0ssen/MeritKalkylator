@@ -29,10 +29,19 @@
 }
 
 header{
+    position: relative;
     flex-direction: column;
     padding-bottom: 2.5vh;
     height: 12.5vh;
     width: 100%;
+}
+
+.author{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 1vmin;
+    margin-bottom: 0.5vmin;
 }
 
 .title{
@@ -128,6 +137,7 @@ header{
     font-size: 3rem;
 }
 
+
 .grade-letter:hover, .calculate-button:hover{
     background-color: var(--da-color);
     color: var(--light-font-color);
@@ -146,6 +156,11 @@ header{
 }
 
 /* Main/Sub Menu */
+
+html{
+    overflow: hidden;
+
+}
 
 .main-menu{
     background-color: black;

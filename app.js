@@ -39,6 +39,7 @@ async function CalcGenerator(program, focus){
     main.classList.add("calculator");
     main.innerHTML = '<div class="column2" id="class-list"></div>';
     courseList = document.getElementById("class-list");
+    document.getElementById("html").style.overflow = "visible";
     let data = await ProgramData(program);
     let kursKoder = await KursKod();
     // Genererar alla klasser till program och inriktning
